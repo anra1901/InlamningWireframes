@@ -1,2 +1,108 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  max-width: 100%;
+}
+
+/* Menu */
+
+p {
+  flex: 2;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex: 1;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+nav {
+  display: flex;
+  padding: 20px;
+  height: 20px;
+  background: #f5f5f5;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Top section */
+
+.topsection {
+  min-height: 700px;
+  background: url(https://via.placeholder.com/200);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.topsection-div {
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 52px;
+  font-weight: bold;
+}
+
+.topsection-p {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* Section header */
+
+.firsth2 {
+  text-align: center;
+  margin-top: 90px;
+  font-size: 48px;
+}
+
+/* Articles */
+
+.firstarticle,
+.secondarticle,
+.thirdarticle {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.article-img1,
+.article-img2,
+.article-img3 {
+  max-width: 50%;
+}
+
+.firsth3,
+.secondh3,
+.thirdh3 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.firstarticle-div,
+.secondarticle-div,
+.thirdarticle-div {
+  max-width: 50%;
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center;
 }
