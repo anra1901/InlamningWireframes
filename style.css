@@ -260,8 +260,9 @@ h4 {
   display: grid;
   grid-row-gap: 25px;
   grid-column-gap: 26px;
-  grid-template-columns: 350px repeat(6, auto) 350px;
+  grid-template-columns: repeat(auto-fill, minmax(142px, 195px));
   grid-template-rows: 129px repeat(3, auto) 129px;
+  justify-content: center;
 }
 
 .textOnImg {
@@ -271,6 +272,8 @@ h4 {
   display: grid;
   grid-template-columns: 1fr 6fr 1fr;
   grid-template-rows: 3fr 6fr 3fr;
+  justify-self: center;
+  align-self: center;
   align-items: center;
   z-index: 1;
   grid-area: 2/ 4 / 5 / 6;
