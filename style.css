@@ -72,7 +72,6 @@ h1 {
 
 .firsth2 {
   text-align: center;
-  margin-top: 0;
   font-size: 48px;
 }
 
@@ -80,8 +79,8 @@ h1 {
 
 .articlesection {
   background: #f8f8f8;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 85px;
+  padding-bottom: 98px;
 }
 
 .firstarticle,
@@ -91,7 +90,8 @@ h1 {
   justify-content: center;
   justify-content: space-around;
   align-items: center;
-  margin: 70px;
+  padding-top: 75px;
+  margin: 0;
 }
 
 .articleImg {
@@ -156,7 +156,7 @@ RECTANGLE 1: */
 .rectangle1 {
   background: #f8f8f8;
   margin: 0;
-  min-height: 100vh;
+  height: 553px;
   display: grid;
   grid-column-gap: 31px;
   grid-row-gap: 22px;
@@ -217,7 +217,7 @@ h4 {
   display: grid;
   grid-row-gap: 22px;
   grid-template-columns: auto 1fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
 }
 
 .bigImg {
@@ -228,26 +228,26 @@ h4 {
 }
 
 .secondh4 {
-  grid-row: 1;
+  grid-row: 2;
   grid-column: 3;
   display: flex;
   align-items: flex-end;
 }
 
 .grid-p.p2 {
-  grid-row: 2;
+  grid-row: 3;
   grid-column: 3;
 }
 
 .thirdh4 {
-  grid-row: 2;
+  grid-row: 3;
   grid-column: 3;
   display: flex;
   align-items: flex-end;
 }
 
 .grid-p.p3 {
-  grid-row: 3;
+  grid-row: 4;
   grid-column: 3;
 }
 
@@ -256,7 +256,6 @@ h4 {
 .rectangle3 {
   background: #f8f8f8;
   margin: 0;
-  /* min-height: 600px; */
   display: grid;
   grid-row-gap: 25px;
   grid-column-gap: 26px;
