@@ -43,8 +43,11 @@ a {
 /* Top section */
 
 .topsection {
-  min-height: 700px;
-  background: url(https://via.placeholder.com/1400x780);
+  min-height: 465px;
+  min-width: 375px;
+  max-height: 800px;
+  max-width: 100%;
+  background-image: url("images/palmtrees.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -95,15 +98,9 @@ h1 {
 }
 
 .articleImg {
-  width: 555px;
   max-width: 555px;
-  height: 360px;
-}
-
-.article-img1,
-.article-img2,
-.article-img3 {
-  max-width: 50%;
+  max-height: 360px;
+  object-fit: cover;
 }
 
 .firsth3,
@@ -141,12 +138,15 @@ h1 {
   height: 500px;
   justify-content: center;
   margin-bottom: 100px;
+  margin-left: 120px;
+  margin-right: 120px;
 }
 
 .lastpictures {
   margin: 20px;
-  width: 164px;
-  height: 166px;
+  max-width: 165px;
+  max-height: 166px;
+  object-fit: cover;
 }
 
 /* GRID RECTANGLES
@@ -156,12 +156,10 @@ RECTANGLE 1: */
 .rectangle1 {
   background: #f8f8f8;
   margin: 0;
-  height: 553px;
+  max-height: 553px;
   display: grid;
-  grid-column-gap: 31px;
-  grid-row-gap: 22px;
-  grid-template-columns: 1fr 3fr 1fr repeat(3, auto) 1fr;
-  grid-template-rows: 1fr repeat(2, auto) 1fr;
+  grid-template-columns: 1fr fit-content(440px) 2fr fit-content(542px) 1fr;
+  grid-template-rows: repeat(3, 1fr);
 }
 
 h4 {
@@ -175,39 +173,52 @@ h4 {
 
 .h4-p1 {
   display: flex;
+  grid-area: 2 / 2;
+  flex-direction: column;
   flex-wrap: wrap;
-  grid-row: 2 / span 2;
+  place-content: center center;
+}
+
+.imagesRectangle1 {
+  display: grid;
+  grid-area: 2 / 4;
+  grid-row-gap: 22px;
+  grid-column-gap: 31px;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 164px));
+  grid-template-rows: repeat(auto-fit, minmax(80px, 164px));
+  justify-items: stretch;
+}
+
+.smallbox1 {
+  max-width: 164px;
+  max-height: 166px;
+  grid-row: 1;
+  grid-column: 1;
+  object-fit: cover;
+}
+
+.smallbox2 {
+  max-width: 164px;
+  max-height: 166px;
+  grid-row: 1;
   grid-column: 2;
-  align-self: center;
+  object-fit: cover;
 }
 
-.smallbox.smallbox1 {
-  grid-row: 2;
-  grid-column: 4;
-}
-
-.smallbox.smallbox2 {
-  grid-row: 2;
-  grid-column: 5;
-}
-
-.bigbox.bigbox1 {
+.bigbox1 {
   max-width: 360px;
-  max-height: 170px;
-  grid-row: 3;
-  grid-column: 4 / span 2;
+  max-height: 166px;
+  grid-row: 2;
+  grid-column: 1 / span 2;
+  object-fit: cover;
 }
 
-.bigbox.bigbox2 {
-  max-width: 170px;
-  max-height: 360px;
-  grid-row: 2 / span 2;
-  grid-column: 6;
-}
-
-.smallbox {
-  max-width: 170px;
-  max-height: 170px;
+.bigbox2 {
+  max-width: 164px;
+  max-height: 354px;
+  grid-row: 1 / span 2;
+  grid-column: 3;
+  object-fit: cover;
 }
 
 /* RECTANGLE 2: */
@@ -217,7 +228,16 @@ h4 {
   margin: 0;
   min-height: 543px;
   display: grid;
-  grid-template-columns: auto 1fr 3fr 1fr;
+  grid-template-columns: fit-content(621px) 1fr fit-content(505px) 1fr;
+}
+
+.bixBoxImg {
+  max-height: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  justify-self: stretch;
 }
 
 .textRectangle2 {
@@ -277,43 +297,71 @@ h4 {
 }
 
 .img1 {
+  max-height: 263px;
+  max-width: 195px;
   grid-row: 2 / span 2;
   grid-column: 2;
+  object-fit: cover;
+  justify-self: stretch;
 }
 
 .img2 {
+  max-height: 142px;
+  max-width: 195px;
   grid-row: 4;
   grid-column: 2;
+  object-fit: cover;
 }
 
 .img3 {
+  max-height: 142px;
+  max-width: 195px;
   grid-row: 2;
   grid-column: 3;
+  object-fit: cover;
 }
 
 .img4 {
+  max-height: 263px;
+  max-width: 195px;
   grid-row: 3 / span 2;
   grid-column: 3;
+  object-fit: cover;
+  justify-self: stretch;
 }
 
 .img5 {
+  max-height: 142px;
+  max-width: 195px;
   grid-row: 2;
   grid-column: 6;
+  object-fit: cover;
 }
 
 .img6 {
+  max-height: 263px;
+  max-width: 195px;
   grid-row: 3 / span 2;
   grid-column: 6;
+  object-fit: cover;
+  justify-self: stretch;
 }
 
 .img7 {
+  max-height: 263px;
+  max-width: 195px;
   grid-row: 2 / span 2;
   grid-column: 7;
+  object-fit: cover;
+  justify-self: stretch;
 }
 
 .img8 {
+  max-height: 142px;
+  max-width: 195px;
   grid-row: 4;
   grid-column: 7;
+  object-fit: cover;
 }
 
 /* Footer */
