@@ -1,0 +1,47 @@
+.topsection {
+  max-height: 465px;
+  max-width: 375px;
+  min-height: 800px;
+  min-width: 100%;
+  background-image: url("/images/imgTopSection.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.topsection-div {
+  max-width: 80%;
+  text-align: center;
+
+  @media (min-width: 500px) {
+    max-width: 40%;
+  }
+}
+
+h1 {
+  font-size: 27px;
+  font-weight: bold;
+  color: $orangeFont;
+  letter-spacing: 1px;
+
+  @media (min-width: 500px) {
+    font-size: 52px;
+    letter-spacing: 1.92px;
+  }
+}
+
+.topsection-p {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.41;
+  letter-spacing: 0.59px;
+  color: #f0f0f0;
+
+  @media (min-width: 500px) {
+    font-size: 25px;
+    letter-spacing: 0.92px;
+    line-height: 1.04;
+  }
+}

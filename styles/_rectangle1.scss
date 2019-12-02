@@ -1,0 +1,82 @@
+@import "./variables/variables";
+@import "./mixins/mixins";
+
+.rectangle1 {
+  display: flex;
+  flex-direction: column;
+  place-content: center center;
+  place-items: center center;
+  background: $lightBackground;
+  margin: 0;
+  min-height: 553px;
+  max-height: 605px;
+
+  @media (min-width: 500px) {
+    display: grid;
+    grid-template-columns: 1fr fit-content(440px) 2fr fit-content(542px) 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+h4 {
+  @include h4();
+}
+
+.grid-p {
+  @include grid-p();
+}
+
+.h4-p1 {
+  display: flex;
+  grid-area: 2 / 2;
+  flex-direction: column;
+  flex-wrap: wrap;
+  place-self: center;
+
+  @media (min-width: 500px) {
+    place-content: center center;
+  }
+}
+
+.imagesRectangle1 {
+  display: grid;
+  grid-area: 2 / 4;
+  margin: 0 20px;
+  grid-row-gap: 22px;
+  grid-column-gap: 31px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 334px));
+  grid-template-rows: repeat(auto-fit, minmax(160px, 166px));
+  justify-items: stretch;
+}
+
+.smallbox1 {
+  max-width: 164px;
+  max-height: 166px;
+  grid-row: 1;
+  grid-column: 1;
+  object-fit: cover;
+}
+
+.smallbox2 {
+  max-width: 164px;
+  max-height: 166px;
+  grid-row: 1;
+  grid-column: 2;
+  object-fit: cover;
+}
+
+.bigbox1 {
+  max-width: 360px;
+  max-height: 166px;
+  grid-row: 2;
+  grid-column: 1 / span 2;
+  object-fit: cover;
+}
+
+.bigbox2 {
+  max-width: 164px;
+  max-height: 354px;
+  grid-row: 1 / span 2;
+  grid-column: 3;
+  object-fit: cover;
+}

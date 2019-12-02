@@ -1,0 +1,25 @@
+@import "./mixins/mixins";
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2d3039;
+  min-height: 248px;
+
+  @media (max-width: 500px) {
+    min-height: 149px;
+  }
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footerLogo {
+  @include logo();
+  padding-bottom: 29px;
+}

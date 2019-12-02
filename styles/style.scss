@@ -1,0 +1,18 @@
+@import "./menu";
+@import "./topsection";
+@import "./articles";
+@import "./cubeImages";
+@import "./rectangle1";
+@import "./rectangle2";
+@import "./rectangle3";
+@import "./footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  max-width: 100%;
+}

@@ -1,0 +1,36 @@
+@mixin logo() {
+  margin-bottom: 10px;
+  font-family: "Unica One", cursive;
+  font-size: 26px;
+  color: $orangeFont;
+  letter-spacing: 0.96px;
+
+  @media (min-width: 500px) {
+    margin-bottom: 0;
+  }
+}
+
+@mixin h4() {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.17px;
+  margin-bottom: 15px;
+  color: $headingColor;
+
+  @media (min-width: 500px) {
+    font-size: 24px;
+    letter-spacing: 0.22px;
+  }
+}
+
+@mixin grid-p() {
+  font-size: 14px;
+  letter-spacing: 0.52px;
+  line-height: 1.57;
+
+  @media (min-width: 500px) {
+    font-size: 16px;
+    letter-spacing: 0.59px;
+    line-height: 1.38;
+  }
+}

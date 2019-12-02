@@ -1,0 +1,135 @@
+@import "./variables/variables";
+
+.rectangle3 {
+  background: $lightBackground;
+  display: flex;
+  flex-direction: column;
+  place-content: center center;
+  place-items: center center;
+
+  @media (min-width: 500px) {
+    display: grid;
+    grid-row-gap: 25px;
+    grid-column-gap: 26px;
+    grid-template-columns: 1fr repeat(6, auto) 1fr;
+    grid-template-rows: 129px repeat(3, auto) 129px;
+    justify-content: center;
+  }
+}
+
+.textOnImg {
+  min-width: 296px;
+  min-height: 264px;
+  background-color: #9aa5aa;
+  display: flex;
+  flex-direction: column;
+  place-content: center center;
+  place-items: center center;
+  margin: -60px 60px;
+  z-index: 1;
+
+  @media (min-width: 500px) {
+    max-width: 570px;
+    max-height: 291px;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 1fr repeat(2, auto) 1fr;
+    place-self: center center;
+    place-content: center center;
+    align-items: center;
+    margin: -120px;
+    grid-area: 2 / 4 / 5 / 6;
+  }
+}
+
+.forthh4 {
+  grid-column: 2;
+  grid-row: 2;
+  color: $orangeFont;
+}
+
+.grid-p.p4 {
+  @include grid-p();
+
+  grid-column: 2;
+  grid-row: 3;
+  color: #ffffff;
+}
+
+.img1 {
+  max-height: 263px;
+  max-width: 195px;
+  grid-row: 2 / span 2;
+  grid-column: 2;
+  object-fit: cover;
+  justify-self: stretch;
+}
+
+.img2 {
+  max-height: 142px;
+  max-width: 195px;
+  grid-row: 4;
+  grid-column: 2;
+  object-fit: cover;
+}
+
+.img3 {
+  max-height: 142px;
+  max-width: 195px;
+  grid-row: 2;
+  grid-column: 3;
+  object-fit: cover;
+}
+
+.img4 {
+  max-height: 263px;
+  max-width: 195px;
+  grid-row: 3 / span 2;
+  grid-column: 3;
+  object-fit: cover;
+  justify-self: stretch;
+}
+
+.img5 {
+  max-height: 142px;
+  max-width: 195px;
+  grid-row: 2;
+  grid-column: 6;
+  object-fit: cover;
+}
+
+.img6 {
+  max-height: 263px;
+  max-width: 195px;
+  grid-row: 3 / span 2;
+  grid-column: 6;
+  object-fit: cover;
+  justify-self: stretch;
+}
+
+.img7 {
+  max-height: 263px;
+  max-width: 195px;
+  grid-row: 2 / span 2;
+  grid-column: 7;
+  object-fit: cover;
+  justify-self: stretch;
+}
+
+.img8 {
+  max-height: 142px;
+  max-width: 195px;
+  grid-row: 4;
+  grid-column: 7;
+  object-fit: cover;
+}
+
+@media (max-width: 500px) {
+  .img1,
+  .img4,
+  .img6,
+  .img7,
+  .bigbox2 {
+    display: none;
+  }
+}
