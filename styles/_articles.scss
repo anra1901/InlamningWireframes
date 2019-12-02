@@ -7,7 +7,7 @@
   letter-spacing: 1.11px;
   color: $headingColor;
 
-  @media (max-width: 500px) {
+  @media (min-width: 500px) {
     font-size: 48px;
     letter-spacing: 1.77px;
   }
@@ -30,8 +30,12 @@
   justify-content: space-around;
   align-items: center;
   padding: 0 10%;
-  margin-top: 58px;
+  margin-top: 29px;
   flex-wrap: wrap-reverse;
+
+  @media (min-width: 500px) {
+    margin-top: 58px;
+  }
 }
 
 .secondarticle {
@@ -39,8 +43,8 @@
 }
 
 .articleImg {
-  max-width: 335px;
-  max-height: 217px;
+  max-width: 336px;
+  max-height: 224px;
   object-fit: cover;
 
   @media (min-width: 500px) {
@@ -70,16 +74,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 500px;
-  max-width: 80%;
-  min-height: 350px;
   font-size: 14px;
   letter-spacing: 0.52px;
   line-height: 1.86;
   font-weight: normal;
   text-align: center;
+  margin-bottom: 14.6px;
 
   @media (min-width: 500px) {
+    min-width: 500px;
+    max-width: 80%;
+    min-height: 350px;
     max-width: 40%;
     font-size: 16px;
     letter-spacing: 0.59px;

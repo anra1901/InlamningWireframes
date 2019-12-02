@@ -1,6 +1,6 @@
 .topsection {
-  max-height: 465px;
-  max-width: 375px;
+  max-height: 487px;
+  max-width: 376px;
   min-height: 800px;
   min-width: 100%;
   background-image: url("/images/imgTopSection.jpg");
@@ -9,6 +9,15 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: 500px) {
+    max-height: 782px;
+    max-width: 100%;
+    min-height: 487;
+    min-width: 376px;
+    align-items: flex-start;
+  }
 }
 
 .topsection-div {
@@ -17,6 +26,7 @@
 
   @media (min-width: 500px) {
     max-width: 40%;
+    margin: 160px 0 409px 102px;
   }
 }
 

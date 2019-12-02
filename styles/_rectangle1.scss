@@ -7,7 +7,7 @@
   place-content: center center;
   place-items: center center;
   background: $lightBackground;
-  margin: 0;
+  margin-bottom: 30px;
   min-height: 553px;
   max-height: 605px;
 
@@ -31,7 +31,7 @@ h4 {
   grid-area: 2 / 2;
   flex-direction: column;
   flex-wrap: wrap;
-  place-self: center;
+  padding: 50px 20px 40px 20px;
 
   @media (min-width: 500px) {
     place-content: center center;
@@ -40,13 +40,17 @@ h4 {
 
 .imagesRectangle1 {
   display: grid;
-  grid-area: 2 / 4;
   margin: 0 20px;
   grid-row-gap: 22px;
   grid-column-gap: 31px;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 334px));
-  grid-template-rows: repeat(auto-fit, minmax(160px, 166px));
+  grid-template-columns: repeat(2, auto);
   justify-items: stretch;
+
+  @media (min-width: 500px) {
+    grid-area: 2 / 4;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 334px));
+    grid-template-rows: repeat(auto-fit, minmax(160px, 166px));
+  }
 }
 
 .smallbox1 {
