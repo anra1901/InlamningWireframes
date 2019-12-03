@@ -4,39 +4,46 @@
 .rectangle2 {
   background: $darkBackground;
   margin: 0;
-  min-height: 538px;
+  min-height: 548px;
   display: flex;
   flex-direction: column-reverse;
-  place-content: center center;
   place-items: center center;
+  gap: 5em;
 
   @media (min-width: 500px) {
     display: grid;
-    grid-template-columns: fit-content(621px) 1fr fit-content(505px) 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 .bixBoxImg {
-  max-height: 100%;
   min-height: 100%;
-  width: 100%;
   height: 100%;
-  object-fit: cover;
-  justify-self: stretch;
+  width: 100%;
+  img {
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 
 .textRectangle2 {
-  display: flex;
-  flex-direction: row;
-  grid-column: 3;
-  flex-wrap: wrap;
+  display: block;
   align-content: center;
+  padding: 43px 20px 0 20px;
+
+  @media (min-width: 500px) {
+    padding: 118px 117px 118px 123px;
+  }
 }
 
 .secondh4,
 .thirdh4 {
   @include h4();
-  color: $orangeFont;
+  color: $lightFont;
 }
 
 .grid-p.p2 {

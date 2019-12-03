@@ -11,7 +11,7 @@
   min-height: 553px;
   max-height: 605px;
 
-  @media (min-width: 500px) {
+  @media (min-width: 1230px) {
     display: grid;
     grid-template-columns: 1fr fit-content(440px) 2fr fit-content(542px) 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -33,7 +33,7 @@ h4 {
   flex-wrap: wrap;
   padding: 50px 20px 40px 20px;
 
-  @media (min-width: 500px) {
+  @media (min-width: 1230px) {
     place-content: center center;
   }
 }
@@ -46,7 +46,7 @@ h4 {
   grid-template-columns: repeat(2, auto);
   justify-items: stretch;
 
-  @media (min-width: 500px) {
+  @media (min-width: 1230px) {
     grid-area: 2 / 4;
     grid-template-columns: repeat(auto-fit, minmax(150px, 334px));
     grid-template-rows: repeat(auto-fit, minmax(160px, 166px));

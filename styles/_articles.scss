@@ -5,7 +5,7 @@
   font-size: 30px;
   font-weight: bold;
   letter-spacing: 1.11px;
-  color: $headingColor;
+  color: $darkFont;
 
   @media (min-width: 500px) {
     font-size: 48px;
@@ -59,7 +59,7 @@
   font-size: 25px;
   font-weight: bold;
   text-align: center;
-  color: $headingColor;
+  color: $darkFont;
   letter-spacing: 0.92px;
 
   @media (min-width: 500px) {
