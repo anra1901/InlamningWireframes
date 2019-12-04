@@ -10,7 +10,7 @@
   place-items: center center;
   gap: 5em;
 
-  @media (min-width: 500px) {
+  @media (min-width: 600px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -33,9 +33,9 @@
 .textRectangle2 {
   display: block;
   align-content: center;
-  padding: 43px 20px 0 20px;
+  padding: 43px 20px 10px 20px;
 
-  @media (min-width: 500px) {
+  @media (min-width: 1000px) {
     padding: 118px 117px 118px 123px;
   }
 }
@@ -50,9 +50,11 @@
   @include grid-p();
   color: #fafafa;
   margin-bottom: 17px;
+  margin-right: 20px;
 }
 
 .grid-p.p3 {
   @include grid-p();
   color: #fafafa;
+  margin-right: 20px;
 }

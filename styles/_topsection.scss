@@ -1,9 +1,13 @@
+@import "./variables/variables";
+@import "./mixins/mixins";
+
 .topsection {
   max-height: 487px;
   max-width: 376px;
-  min-height: 800px;
+  min-height: 487px;
   min-width: 100%;
-  background-image: url("/images/imgTopSection.jpg");
+  background-image: radial-gradient(circle at 50% 0, #394951, #0c202a3f 93%),
+    url("/images/imgTopSection.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -21,7 +25,7 @@
 }
 
 .topsection-div {
-  max-width: 80%;
+  max-width: 70%;
   text-align: center;
 
   @media (min-width: 500px) {
