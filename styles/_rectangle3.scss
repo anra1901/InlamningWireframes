@@ -11,6 +11,7 @@
   padding: 28px 10px;
   justify-content: center;
   align-content: center;
+  transition: linear 500ms;
 
   @media (min-width: 1000px) {
     min-height: 678px;
@@ -32,6 +33,7 @@
   place-content: center center;
   place-self: center center;
   z-index: 1;
+  transition: linear 500ms;
 
   @media (min-width: 1000px) {
     min-width: 570px;
@@ -48,6 +50,7 @@
   grid-area: 2 / 2;
   color: $lightFont;
   padding: 30px 30px 0 30px;
+  transition: linear 500ms;
 
   @media (min-width: 1000px) {
     padding: 0 75px;
@@ -59,6 +62,7 @@
   grid-area: 3 / 2;
   color: #ffffff;
   padding: 0 30px 30px 30px;
+  transition: linear 500ms;
 
   @media (min-width: 1000px) {
     padding: 0 75px;
@@ -66,18 +70,7 @@
 }
 
 .collage {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  img {
-    display: block;
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    position: absolute;
-  }
+  @include image-sizing();
 }
 
 .collage.img1 {
@@ -88,6 +81,7 @@
 
 .collage.img2 {
   grid-area: 3 / 1;
+  transition: linear 500ms;
 
   @media (min-width: 1000px) {
     max-height: 142px;
@@ -98,6 +92,7 @@
 
 .collage.img3 {
   grid-area: 1 / 1;
+  transition: linear 500ms;
 
   @media (min-width: 1000px) {
     max-height: 142px;
@@ -114,6 +109,7 @@
 
 .collage.img5 {
   grid-area: 1 / 2;
+  transition: linear 500ms;
 
   @media (min-width: 1000px) {
     max-height: 142px;
@@ -136,6 +132,7 @@
 
 .collage.img8 {
   grid-area: 3 / 2;
+  transition: linear 500ms;
 
   @media (min-width: 1000px) {
     max-height: 142px;
@@ -149,6 +146,7 @@
 .collage.img6,
 .collage.img7 {
   display: none;
+  transition: linear 500ms;
 
   @media (min-width: 1000px) {
     display: block;

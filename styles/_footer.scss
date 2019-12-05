@@ -2,9 +2,8 @@
 @import "./mixins/mixins";
 
 .footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend .footer-nav;
+  flex-direction: row;
   background: #2d3039;
   min-height: 248px;
 
@@ -20,7 +19,7 @@
   flex-direction: column;
 }
 
-.footerLogo {
+.footer-logo {
   @include logo();
   padding-bottom: 29px;
 }

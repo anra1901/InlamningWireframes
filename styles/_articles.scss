@@ -4,8 +4,9 @@
   font-weight: bold;
   letter-spacing: 1.11px;
   color: $darkFont;
+  transition: linear 300ms;
 
-  @media (min-width: 500px) {
+  @media (min-width: 700px) {
     font-size: 48px;
     letter-spacing: 1.77px;
   }
@@ -30,8 +31,9 @@
   padding: 0 10%;
   margin-top: 29px;
   flex-wrap: wrap-reverse;
+  transition: linear 300ms;
 
-  @media (min-width: 500px) {
+  @media (min-width: 1300px) {
     margin-top: 58px;
   }
 }
@@ -44,8 +46,9 @@
   max-width: 338px;
   max-height: 226px;
   object-fit: cover;
+  transition: linear 300ms;
 
-  @media (min-width: 500px) {
+  @media (min-width: 700px) {
     max-width: 555px;
     max-height: 360px;
   }
@@ -64,8 +67,9 @@
   text-align: center;
   color: $darkFont;
   letter-spacing: 0.92px;
+  transition: linear 300ms;
 
-  @media (min-width: 500px) {
+  @media (min-width: 700px) {
     font-size: 36px;
     letter-spacing: 1.33px;
   }
@@ -83,11 +87,12 @@
   font-weight: normal;
   text-align: center;
   margin-bottom: 14.6px;
+  transition: linear 300ms;
 
-  @media (min-width: 500px) {
+  @media (min-width: 700px) {
     min-width: 500px;
     max-width: 80%;
-    min-height: 350px;
+    min-height: 290px;
     max-width: 40%;
     font-size: 16px;
     letter-spacing: 0.59px;

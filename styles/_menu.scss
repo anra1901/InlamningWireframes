@@ -9,22 +9,21 @@
   place-content: center center;
   place-items: center center;
 
+  &__logo {
+    @include logo();
+    margin-right: 0;
+
+    @media (min-width: 500px) {
+      margin-right: auto;
+      margin-left: 42px;
+    }
+  }
+
   @media (min-width: 500px) {
     min-height: 70px;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-  }
-}
-
-.menuLogo {
-  @include logo();
-
-  margin-right: 0;
-
-  @media (min-width: 500px) {
-    margin-right: auto;
-    margin-left: 42px;
   }
 }
 
